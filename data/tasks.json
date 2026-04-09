@@ -1,99 +1,736 @@
 {
   "tasks": [
     {
-      "id": "guide_onboarding",
-      "title": "Welcome to NorthBridge Mission Control",
-      "description": "This is your AI agency command center. Drag tasks to In Progress and your agents will automatically execute them.",
-      "status": "permanent",
-      "project": "guides",
-      "tags": ["guide"],
-      "subtasks": [
-        {"id": "sub_001", "title": "Review the Kanban board columns", "done": false},
-        {"id": "sub_002", "title": "Create your first task in Backlog", "done": false},
-        {"id": "sub_003", "title": "Drag a task to In Progress to trigger auto-execution", "done": false}
-      ],
-      "priority": "high",
-      "comments": [{"author": "Atlas", "text": "Welcome! I coordinate all 16 agents across 2 servers. Move tasks to In Progress and we handle the rest.", "timestamp": "2026-04-09T00:00:00Z"}],
-      "createdAt": "2026-04-09T00:00:00Z"
-    },
-    {
-      "id": "task_brand_audit",
-      "title": "Run NorthBridge brand audit",
-      "description": "Compass: Analyze NorthBridge brand positioning. Scout: Research top 5 Michigan marketing agencies. Quill: Draft 3 tagline options. Deliver a 1-page brand summary.",
+      "id": "task_001",
+      "title": "Build NorthBridge brand guidelines document",
+      "description": "Compass: Create comprehensive brand guidelines covering logo usage, color palette (#0a0a0a, #3b82f6, #8b5cf6), typography (Inter), tone of voice, and messaging pillars. Quill: Write the copy. Prism: Define visual standards. Save to /data/.openclaw/shared/deliverables/brand-guidelines.md",
       "status": "backlog",
       "project": "internal",
-      "tags": ["branding", "strategy"],
+      "tags": [
+        "branding",
+        "epic"
+      ],
       "subtasks": [
-        {"id": "sub_001", "title": "Compass: Brand positioning analysis", "done": false},
-        {"id": "sub_002", "title": "Scout: Competitor research (5 agencies)", "done": false},
-        {"id": "sub_003", "title": "Quill: Draft 3 tagline options", "done": false},
-        {"id": "sub_004", "title": "Atlas: Compile 1-page brand summary", "done": false}
+        {
+          "id": "s1",
+          "title": "Compass: Define brand positioning and pillars",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Prism: Create visual identity standards",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Quill: Write tone of voice guide",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Atlas: Compile final document",
+          "done": false
+        }
       ],
       "priority": "high",
       "comments": [],
-      "createdAt": "2026-04-09T00:00:01Z"
+      "createdAt": "2026-04-09T22:00:00Z"
     },
     {
-      "id": "task_website_seo",
-      "title": "SEO audit for thenorthbridgemi.com",
-      "description": "Signal: Run full SEO audit on thenorthbridgemi.com. Check meta tags, page speed, keyword gaps, and backlink profile. Deliver actionable recommendations.",
+      "id": "task_002",
+      "title": "SEO audit thenorthbridgemi.com",
+      "description": "Signal: Run full technical SEO audit on thenorthbridgemi.com. Check meta tags on all 7 pages, page speed, mobile responsiveness, heading structure, internal links, schema markup. Deliver prioritized fix list.",
       "status": "backlog",
       "project": "marketing",
-      "tags": ["seo", "website"],
+      "tags": [
+        "seo"
+      ],
       "subtasks": [
-        {"id": "sub_001", "title": "Signal: Technical SEO check", "done": false},
-        {"id": "sub_002", "title": "Signal: Keyword gap analysis", "done": false},
-        {"id": "sub_003", "title": "Signal: Competitor keyword comparison", "done": false},
-        {"id": "sub_004", "title": "Signal: Deliver recommendations report", "done": false}
+        {
+          "id": "s1",
+          "title": "Technical audit (crawlability, speed, mobile)",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "On-page audit (meta, headings, schema)",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Content gap analysis",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Deliver prioritized recommendations",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:01Z"
+    },
+    {
+      "id": "task_003",
+      "title": "Write 5 blog posts for NorthBridge",
+      "description": "Quill + Ink: Write 5 SEO-optimized blog posts. Topics: 1) Why AI agencies outperform traditional agencies, 2) 5 signs your brand needs a refresh, 3) Local SEO guide for Michigan businesses, 4) How to build a marketing funnel in 2026, 5) Case study: launching a brand in 72 hours. Each 800-1200 words.",
+      "status": "backlog",
+      "project": "marketing",
+      "tags": [
+        "content",
+        "seo",
+        "epic"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Quill: Draft post 1 - AI agencies",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Quill: Draft post 2 - Brand refresh",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Ink: Draft post 3 - Local SEO Michigan",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Ink: Draft post 4 - Marketing funnel",
+          "done": false
+        },
+        {
+          "id": "s5",
+          "title": "Quill: Draft post 5 - 72hr brand launch",
+          "done": false
+        }
       ],
       "priority": "medium",
       "comments": [],
-      "createdAt": "2026-04-09T00:00:02Z"
+      "createdAt": "2026-04-09T22:00:02Z"
     },
     {
-      "id": "task_social_calendar",
-      "title": "Create April social media content calendar",
-      "description": "Echo: Plan 2 weeks of social media posts for NorthBridge. Include LinkedIn, Instagram, and X. Prism: Design post concepts. Quill: Write captions.",
+      "id": "task_004",
+      "title": "Create 2-week social media content calendar",
+      "description": "Echo: Plan 14 days of social content for LinkedIn, Instagram, and X. Include post copy, hashtags, posting times. Quill: Write all captions. Prism: Define visual direction for each post.",
       "status": "backlog",
       "project": "marketing",
-      "tags": ["social", "content"],
+      "tags": [
+        "social"
+      ],
       "subtasks": [
-        {"id": "sub_001", "title": "Echo: Plan content calendar (14 days)", "done": false},
-        {"id": "sub_002", "title": "Quill: Write all captions", "done": false},
-        {"id": "sub_003", "title": "Prism: Design visual concepts", "done": false}
+        {
+          "id": "s1",
+          "title": "Echo: Build calendar framework",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Quill: Write 14 LinkedIn captions",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Quill: Write 14 Instagram captions",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Echo: Add hashtags and timing",
+          "done": false
+        }
       ],
       "priority": "medium",
       "comments": [],
-      "createdAt": "2026-04-09T00:00:03Z"
+      "createdAt": "2026-04-09T22:00:03Z"
     },
     {
-      "id": "task_client_proposal",
+      "id": "task_005",
+      "title": "Research top 10 Michigan marketing agencies",
+      "description": "Scout: Deep research on the top 10 marketing agencies in Michigan. For each: services, pricing, team size, notable clients, online presence, strengths/weaknesses. Deliver competitive landscape report.",
+      "status": "backlog",
+      "project": "internal",
+      "tags": [
+        "research"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Scout: Identify top 10 agencies",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Scout: Research each agency",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Metric: Create comparison matrix",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Compass: Write competitive positioning",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:04Z"
+    },
+    {
+      "id": "task_006",
       "title": "Build client proposal template",
-      "description": "Ledger: Create a professional proposal template. Shield: Add terms & conditions section. Forge: Build interactive HTML version. Quill: Write sample copy.",
+      "description": "Ledger: Create a professional, reusable client proposal template. Include: executive summary, scope of work, team allocation, timeline, pricing tiers, terms. Shield: Add legal terms section. Forge: Build interactive HTML version.",
       "status": "backlog",
-      "project": "client-work",
-      "tags": ["proposal", "template"],
+      "project": "internal",
+      "tags": [
+        "bizops"
+      ],
       "subtasks": [
-        {"id": "sub_001", "title": "Ledger: Proposal structure & pricing", "done": false},
-        {"id": "sub_002", "title": "Shield: Terms & conditions", "done": false},
-        {"id": "sub_003", "title": "Quill: Sample copy & case study", "done": false},
-        {"id": "sub_004", "title": "Forge: Interactive HTML version", "done": false}
+        {
+          "id": "s1",
+          "title": "Ledger: Structure and pricing",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Shield: Legal terms",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Quill: Write sample copy",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Forge: HTML version",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:05Z"
+    },
+    {
+      "id": "task_007",
+      "title": "Set up CRM with sample pipeline",
+      "description": "Ledger: Initialize the CRM system at /data/.openclaw/shared/crm/. Create pipeline stages, add 5 sample leads with realistic data. Document the CRM workflow so all agents can log interactions.",
+      "status": "backlog",
+      "project": "internal",
+      "tags": [
+        "crm",
+        "bizops"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Ledger: Create CRM data structure",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Ledger: Add 5 sample leads",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Ledger: Document CRM workflow",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:06Z"
+    },
+    {
+      "id": "task_008",
+      "title": "Create email welcome sequence",
+      "description": "Quill: Write a 5-email welcome sequence for new NorthBridge leads. Email 1: Welcome + value prop. Email 2: Case study. Email 3: Services overview. Email 4: Social proof. Email 5: CTA to book a call. Include subject lines and preview text.",
+      "status": "backlog",
+      "project": "marketing",
+      "tags": [
+        "email",
+        "content"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Quill: Email 1 - Welcome",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Quill: Email 2 - Case study",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Quill: Email 3 - Services",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Quill: Email 4 - Social proof",
+          "done": false
+        },
+        {
+          "id": "s5",
+          "title": "Quill: Email 5 - CTA",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:07Z"
+    },
+    {
+      "id": "task_009",
+      "title": "Build landing page for lead magnet",
+      "description": "Forge: Build a high-converting landing page for a free download - The NorthBridge AI Marketing Playbook. Quill: Write headline, subhead, bullet points, CTA copy. Integrate with the contact form API.",
+      "status": "backlog",
+      "project": "development",
+      "tags": [
+        "webdev",
+        "marketing"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Quill: Write landing page copy",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Forge: Build HTML/CSS page",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Forge: Integrate form submission",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:08Z"
+    },
+    {
+      "id": "task_010",
+      "title": "Write terms of service and privacy policy",
+      "description": "Shield: Draft terms of service and privacy policy for thenorthbridgemi.com. Cover: data collection, cookie usage, service terms, limitation of liability, GDPR/CCPA compliance basics. Forge: Create HTML pages.",
+      "status": "backlog",
+      "project": "internal",
+      "tags": [
+        "legal"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Shield: Draft Terms of Service",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Shield: Draft Privacy Policy",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Forge: Create /terms and /privacy pages",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:09Z"
+    },
+    {
+      "id": "task_011",
+      "title": "Create client onboarding checklist",
+      "description": "Ledger: Build a standardized client onboarding process. Include: discovery call template, brand questionnaire, asset collection checklist, project kickoff agenda, communication setup. Atlas: Review and approve.",
+      "status": "backlog",
+      "project": "internal",
+      "tags": [
+        "bizops"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Ledger: Discovery call template",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Ledger: Brand questionnaire",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Ledger: Asset collection checklist",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Ledger: Project kickoff agenda",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:10Z"
+    },
+    {
+      "id": "task_012",
+      "title": "Keyword research for 5 service categories",
+      "description": "Signal: Research keywords for: AI marketing agency, brand strategy Michigan, small business SEO, social media management, website development services. For each: top 20 keywords, volume, difficulty, intent. Deliver spreadsheet-style report.",
+      "status": "backlog",
+      "project": "marketing",
+      "tags": [
+        "seo",
+        "research"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Signal: AI marketing agency keywords",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Signal: Brand strategy Michigan",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Signal: Small business SEO",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Signal: Social media management",
+          "done": false
+        },
+        {
+          "id": "s5",
+          "title": "Signal: Website development services",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:11Z"
+    },
+    {
+      "id": "task_013",
+      "title": "Design NorthBridge pitch deck outline",
+      "description": "Compass: Create a 12-slide pitch deck outline for NorthBridge. Slides: Cover, Problem, Solution, How It Works, AI Team, Services, Case Studies, Pricing, Process, FAQ, Social Proof, CTA. Quill: Write slide copy.",
+      "status": "backlog",
+      "project": "internal",
+      "tags": [
+        "strategy",
+        "sales"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Compass: Deck structure and messaging",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Quill: Write all slide copy",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Atlas: Review final deck",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:12Z"
+    },
+    {
+      "id": "task_014",
+      "title": "Build API documentation for NB-Server",
+      "description": "Byte: Document all NB-Server API endpoints. Read nb-server.js, extract every route, document params/responses/auth. Create a clean API reference page at /api-docs.",
+      "status": "backlog",
+      "project": "development",
+      "tags": [
+        "docs",
+        "api"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Byte: Extract all routes from nb-server.js",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Byte: Document each endpoint",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Forge: Build API docs HTML page",
+          "done": false
+        }
       ],
       "priority": "low",
       "comments": [],
-      "createdAt": "2026-04-09T00:00:04Z"
+      "createdAt": "2026-04-09T22:00:13Z"
+    },
+    {
+      "id": "task_015",
+      "title": "Create LinkedIn company page content strategy",
+      "description": "Echo + Catalyst: Develop a 30-day LinkedIn content strategy for NorthBridge company page. Include: thought leadership posts, behind-the-scenes AI team content, client success stories, industry insights. Define posting frequency and engagement tactics.",
+      "status": "backlog",
+      "project": "marketing",
+      "tags": [
+        "social",
+        "linkedin"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Catalyst: Content pillars and strategy",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Echo: 30-day posting calendar",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Quill: Write 10 sample posts",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:14Z"
+    },
+    {
+      "id": "task_016",
+      "title": "Analyze and improve website conversion",
+      "description": "Metric + Signal: Audit thenorthbridgemi.com for conversion optimization. Check: CTA placement, form friction, page flow, mobile UX, load speed. Deliver specific improvements with before/after recommendations.",
+      "status": "backlog",
+      "project": "development",
+      "tags": [
+        "cro",
+        "analytics"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Metric: CTA and flow analysis",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Signal: Page speed and technical audit",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Forge: Implement top 5 fixes",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:15Z"
+    },
+    {
+      "id": "task_017",
+      "title": "Write NorthBridge AI Marketing Playbook (lead magnet)",
+      "description": "Ink: Write a 15-page PDF-style playbook titled The NorthBridge AI Marketing Playbook. Chapters: Why AI Marketing, The 5 Pillars, Building Your AI Team, Case Studies, Getting Started. Compass: Strategy input. Quill: Polish copy.",
+      "status": "backlog",
+      "project": "marketing",
+      "tags": [
+        "content",
+        "lead-magnet",
+        "epic"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Compass: Outline and strategy input",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Ink: Write all chapters",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Quill: Edit and polish",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Atlas: Final review",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:16Z"
+    },
+    {
+      "id": "task_018",
+      "title": "Set up automated daily server health report",
+      "description": "Atlas: Configure the server-health and morning-brief skills to run daily. Check both VPS instances, all containers, website pages, SSL, Slack connection. Post report to Slack at 8 AM.",
+      "status": "backlog",
+      "project": "internal",
+      "tags": [
+        "devops",
+        "automation"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Atlas: Test server-health skill",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Atlas: Test morning-brief skill",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Byte: Set up cron triggers",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:17Z"
+    },
+    {
+      "id": "task_019",
+      "title": "Create cold outreach email sequence for agency services",
+      "description": "Catalyst + Quill: Build a 4-email cold outreach sequence targeting small/medium businesses in Michigan. Email 1: Pain point hook. Email 2: Social proof. Email 3: Value offer. Email 4: Last chance. Personalization tokens for company name and industry.",
+      "status": "backlog",
+      "project": "marketing",
+      "tags": [
+        "email",
+        "outreach",
+        "sales"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Catalyst: Outreach strategy and targeting",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Quill: Write 4 email templates",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Quill: A/B subject line variants",
+          "done": false
+        }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:18Z"
+    },
+    {
+      "id": "task_020",
+      "title": "Build internal knowledge base",
+      "description": "Atlas: Create a structured knowledge base at /data/.openclaw/shared/knowledge/. Sections: agency processes, client templates, brand assets, technical docs, meeting notes. All agents should contribute their domain expertise. This becomes the agency brain.",
+      "status": "backlog",
+      "project": "internal",
+      "tags": [
+        "knowledge",
+        "epic"
+      ],
+      "subtasks": [
+        {
+          "id": "s1",
+          "title": "Atlas: Create KB structure",
+          "done": false
+        },
+        {
+          "id": "s2",
+          "title": "Compass: Add strategy frameworks",
+          "done": false
+        },
+        {
+          "id": "s3",
+          "title": "Quill: Add copy templates",
+          "done": false
+        },
+        {
+          "id": "s4",
+          "title": "Signal: Add SEO playbooks",
+          "done": false
+        },
+        {
+          "id": "s5",
+          "title": "Ledger: Add biz ops docs",
+          "done": false
+        },
+        {
+          "id": "s6",
+          "title": "Shield: Add legal templates",
+          "done": false
+        }
+      ],
+      "priority": "high",
+      "comments": [],
+      "createdAt": "2026-04-09T22:00:19Z"
     }
   ],
   "projects": [
-    {"id": "guides", "name": "Guides", "color": "#10b981", "icon": "📚"},
-    {"id": "internal", "name": "Internal", "color": "#8b5cf6", "icon": "🏢"},
-    {"id": "marketing", "name": "Marketing", "color": "#f59e0b", "icon": "📣"},
-    {"id": "client-work", "name": "Client Work", "color": "#3b82f6", "icon": "💼"},
-    {"id": "development", "name": "Development", "color": "#ef4444", "icon": "💻"}
+    {
+      "id": "internal",
+      "name": "Internal",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfe2"
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udce3"
+    },
+    {
+      "id": "development",
+      "name": "Development",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcbb"
+    },
+    {
+      "id": "client-work",
+      "name": "Client Work",
+      "color": "#3b82f6",
+      "icon": "\ud83d\udcbc"
+    }
   ],
   "activities": [
-    {"type": "created", "actor": "Atlas", "task": "Brand Audit", "time": "just now"},
-    {"type": "created", "actor": "Atlas", "task": "SEO Audit", "time": "just now"}
+    {
+      "type": "created",
+      "actor": "Atlas",
+      "task": "20 tasks loaded",
+      "time": "just now"
+    }
   ],
-  "lastUpdated": "2026-04-09T00:00:00Z"
+  "lastUpdated": "2026-04-09T22:00:00Z"
 }
