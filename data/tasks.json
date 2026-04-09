@@ -1,0 +1,99 @@
+{
+  "tasks": [
+    {
+      "id": "guide_onboarding",
+      "title": "Welcome to NorthBridge Mission Control",
+      "description": "This is your AI agency command center. Drag tasks to In Progress and your agents will automatically execute them.",
+      "status": "permanent",
+      "project": "guides",
+      "tags": ["guide"],
+      "subtasks": [
+        {"id": "sub_001", "title": "Review the Kanban board columns", "done": false},
+        {"id": "sub_002", "title": "Create your first task in Backlog", "done": false},
+        {"id": "sub_003", "title": "Drag a task to In Progress to trigger auto-execution", "done": false}
+      ],
+      "priority": "high",
+      "comments": [{"author": "Atlas", "text": "Welcome! I coordinate all 16 agents across 2 servers. Move tasks to In Progress and we handle the rest.", "timestamp": "2026-04-09T00:00:00Z"}],
+      "createdAt": "2026-04-09T00:00:00Z"
+    },
+    {
+      "id": "task_brand_audit",
+      "title": "Run NorthBridge brand audit",
+      "description": "Compass: Analyze NorthBridge brand positioning. Scout: Research top 5 Michigan marketing agencies. Quill: Draft 3 tagline options. Deliver a 1-page brand summary.",
+      "status": "backlog",
+      "project": "internal",
+      "tags": ["branding", "strategy"],
+      "subtasks": [
+        {"id": "sub_001", "title": "Compass: Brand positioning analysis", "done": false},
+        {"id": "sub_002", "title": "Scout: Competitor research (5 agencies)", "done": false},
+        {"id": "sub_003", "title": "Quill: Draft 3 tagline options", "done": false},
+        {"id": "sub_004", "title": "Atlas: Compile 1-page brand summary", "done": false}
+      ],
+      "priority": "high",
+      "comments": [],
+      "createdAt": "2026-04-09T00:00:01Z"
+    },
+    {
+      "id": "task_website_seo",
+      "title": "SEO audit for thenorthbridgemi.com",
+      "description": "Signal: Run full SEO audit on thenorthbridgemi.com. Check meta tags, page speed, keyword gaps, and backlink profile. Deliver actionable recommendations.",
+      "status": "backlog",
+      "project": "marketing",
+      "tags": ["seo", "website"],
+      "subtasks": [
+        {"id": "sub_001", "title": "Signal: Technical SEO check", "done": false},
+        {"id": "sub_002", "title": "Signal: Keyword gap analysis", "done": false},
+        {"id": "sub_003", "title": "Signal: Competitor keyword comparison", "done": false},
+        {"id": "sub_004", "title": "Signal: Deliver recommendations report", "done": false}
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T00:00:02Z"
+    },
+    {
+      "id": "task_social_calendar",
+      "title": "Create April social media content calendar",
+      "description": "Echo: Plan 2 weeks of social media posts for NorthBridge. Include LinkedIn, Instagram, and X. Prism: Design post concepts. Quill: Write captions.",
+      "status": "backlog",
+      "project": "marketing",
+      "tags": ["social", "content"],
+      "subtasks": [
+        {"id": "sub_001", "title": "Echo: Plan content calendar (14 days)", "done": false},
+        {"id": "sub_002", "title": "Quill: Write all captions", "done": false},
+        {"id": "sub_003", "title": "Prism: Design visual concepts", "done": false}
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-04-09T00:00:03Z"
+    },
+    {
+      "id": "task_client_proposal",
+      "title": "Build client proposal template",
+      "description": "Ledger: Create a professional proposal template. Shield: Add terms & conditions section. Forge: Build interactive HTML version. Quill: Write sample copy.",
+      "status": "backlog",
+      "project": "client-work",
+      "tags": ["proposal", "template"],
+      "subtasks": [
+        {"id": "sub_001", "title": "Ledger: Proposal structure & pricing", "done": false},
+        {"id": "sub_002", "title": "Shield: Terms & conditions", "done": false},
+        {"id": "sub_003", "title": "Quill: Sample copy & case study", "done": false},
+        {"id": "sub_004", "title": "Forge: Interactive HTML version", "done": false}
+      ],
+      "priority": "low",
+      "comments": [],
+      "createdAt": "2026-04-09T00:00:04Z"
+    }
+  ],
+  "projects": [
+    {"id": "guides", "name": "Guides", "color": "#10b981", "icon": "📚"},
+    {"id": "internal", "name": "Internal", "color": "#8b5cf6", "icon": "🏢"},
+    {"id": "marketing", "name": "Marketing", "color": "#f59e0b", "icon": "📣"},
+    {"id": "client-work", "name": "Client Work", "color": "#3b82f6", "icon": "💼"},
+    {"id": "development", "name": "Development", "color": "#ef4444", "icon": "💻"}
+  ],
+  "activities": [
+    {"type": "created", "actor": "Atlas", "task": "Brand Audit", "time": "just now"},
+    {"type": "created", "actor": "Atlas", "task": "SEO Audit", "time": "just now"}
+  ],
+  "lastUpdated": "2026-04-09T00:00:00Z"
+}
